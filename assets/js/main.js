@@ -55,3 +55,20 @@ sr.reveal('.home__data, .about__img, .skills__subtitle, .skills__text',{});
 sr.reveal('.home__img, .about__subtitle, .about__text, .skills__img',{delay: 400}); 
 sr.reveal('.home__social-icon',{ interval: 200}); 
 sr.reveal('.skills__data, .work__img, .contact__input',{interval: 200}); 
+
+/*===== CONTACT =====*/
+function sendEmail() {
+    Email.send({
+      Host: "smtp.gmail.com",
+      Username: "gabiorze6br@gmail.com",
+      Password: "udla ledf ozuv upzm",
+      To: "gabiorze6br@gmail.com",
+      From: document.getElementById("email").value,
+      Subject: "Contato via Portifólio",
+      Body: `Nome: ${document.getElementById("name").value}<br>
+             Email: ${document.getElementById("email").value}<br>
+             Mensagem: ${document.getElementById("message").value}`
+    }).then(
+      message => alert(message)
+    );
+  }

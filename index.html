@@ -41,13 +41,13 @@
                 <div class="home__data">
                     <h1 class="home__title">Oi,<br>Eu sou <span class="home__title-color">Gabrielli</span><br> Designer</h1>
 
-                    <a href="#" class="button">Contato</a>
+                    <a href="#contact" class="button">Contato</a>
                 </div>
 
                 <div class="home__social">
-                    <a href="" class="home__social-icon"><i class='bx bxl-linkedin'></i></a>
-                    <a href="" class="home__social-icon"><i class='bx bxl-behance' ></i></a>
-                    <a href="" class="home__social-icon"><i class='bx bxl-github' ></i></a>
+                    <a href="https://www.facebook.com/gabrielli.micheluzziorzeckowicz" target="_blank" class="home__social-icon"><i class='bx bxl-facebook' ></i></a>
+                    <a href="https://www.instagram.com/gabim._mini/?next=%2F" target="_blank" class="home__social-icon"><i class='bx bxl-instagram' ></i></a>
+                    <a href="https://github.com/gabi718" target="_blank" class="home__social-icon"><i class='bx bxl-github' ></i></a>
                 </div>
 
                 <div class="home__img">
@@ -89,7 +89,7 @@
                         <p class="skills__text">Designer com foco em mobile, especialista em Figma e UX/UI. Colaboro ativamente em equipe e contribuo na criação de Design Systems, unindo estética, usabilidade e consistência.</p>
                         <div class="skills__data">
                             <div class="skills__names">
-                                <i class='bx bxl-html5 skills__icon'></i>
+                                <i class='bx bxl-figma skills__icon'></i>
                                 <span class="skills__name">Figma</span>
                             </div>
                             <div class="skills__bar skills__figma">
@@ -101,7 +101,7 @@
                         </div>
                         <div class="skills__data">
                             <div class="skills__names">
-                                <i class='bx bxl-css3 skills__icon'></i>
+                                <i class="bx bx-palette skills__icon"></i>
                                 <span class="skills__name">Design System</span>
                             </div>
                             <div class="skills__bar skills__design">
@@ -113,7 +113,7 @@
                         </div>
                         <div class="skills__data">
                             <div class="skills__names">
-                                <i class='bx bxl-javascript skills__icon' ></i>
+                                <i class='bx bx-group skills__icon' ></i>
                                 <span class="skills__name">Trabalho em Equipe</span>
                             </div>
                             <div class="skills__bar skills__team">
@@ -160,10 +160,10 @@
 
                 <div class="contact__container bd-grid">
                     <form action="" class="contact__form">
-                        <input type="text" placeholder="Nome" class="contact__input">
-                        <input type="mail" placeholder="Email" class="contact__input">
-                        <textarea name="" id="" cols="0" rows="10" class="contact__input"></textarea>
-                        <input type="button" value="Enviar" class="contact__button button">
+                        <input id="name" type="text" placeholder="Nome" class="contact__input">
+                        <input id="email" type="mail" placeholder="Email" class="contact__input">
+                        <textarea name="" id="message" cols="0" rows="10" class="contact__input"></textarea>
+                        <input type="button" onclick="sendEmail()" value="Enviar" class="contact__button button">
                     </form>
                 </div>
             </section>
@@ -173,12 +173,12 @@
         <footer class="footer">
             <p class="footer__title">Gabrielli</p>
             <div class="footer__social">
-                <a href="#" class="footer__icon"><i class='bx bxl-facebook' ></i></a>
-                <a href="#" class="footer__icon"><i class='bx bxl-instagram' ></i></a>
-                <a href="#" class="footer__icon"><i class='bx bxl-twitter' ></i></a>
+                <a href="https://www.facebook.com/gabrielli.micheluzziorzeckowicz" target="_blank" class="footer__icon"><i class='bx bxl-facebook' ></i></a>
+                <a href="https://www.instagram.com/gabim._mini/?next=%2F" target="_blank" class="footer__icon"><i class='bx bxl-instagram' ></i></a>
             </div>
         </footer>
 
+        <script src="https://smtpjs.com/v3/smtp.js"></script>
 
         <!--===== SCROLL REVEAL =====-->
         <script src="https://unpkg.com/scrollreveal"></script>
